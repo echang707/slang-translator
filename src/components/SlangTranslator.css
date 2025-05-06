@@ -2,22 +2,23 @@ body {
   font-family: 'Poppins', sans-serif;
   background: #f9fafb;
   margin: 0;
-  padding: 0;
+  padding: 4rem 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
 }
 
 .translator-container {
-  max-width: 600px;
-  width: 90%;
-  padding: 2rem;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  max-width: 1000px; /* 🔥 Make the card WIDER */
+  width: 95%;
   text-align: center;
 }
+
 
 .input-box,
 .api-key-input,
