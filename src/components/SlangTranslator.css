@@ -1,23 +1,23 @@
 html, body, #root {
   margin: 0;
   padding: 0;
-  height: auto;
   width: 100%;
-  font-family: 'Poppins', sans-serif;
   background: #f9fafb;
+  font-family: 'Poppins', sans-serif;
   display: grid;
   place-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
 
 .translator-container {
+  width: 100%;
+  max-width: 1000px;
+  padding: 3rem;
   background: white;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-  padding: 3rem;
-  margin: 3rem 0;
-  max-width: 1000px;
-  width: 95%;
   text-align: center;
   box-sizing: border-box;
 }
