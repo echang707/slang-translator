@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import slangData from "../data/slangData";
+import slangData from "../data/slangdata";
 import "./SlangTranslator.css";
 
 // ✅ Load from .env
