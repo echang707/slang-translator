@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
-import slangData from "../data/slangdata";
+import slangdata from "../data/slangdata";
 import "./SlangTranslator.css";
 
 // ✅ Load from .env
@@ -13,7 +13,7 @@ export default function SlangTranslator() {
 
   const translate = async () => {
     const lowerInput = input.toLowerCase();
-    const foundSlang = slangData.filter(entry =>
+    const foundSlang = slangdata.filter(entry =>
       lowerInput.includes(entry.slang_term.toLowerCase())
     );
     setSlangUsed(foundSlang);

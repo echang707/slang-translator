@@ -1,4 +1,4 @@
-const slangData = [
+const slangdata = [
     {
       "slang_term": "adulting",
       "translation": "Doing responsible, grown-up tasks.",
