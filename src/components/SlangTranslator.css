@@ -1,8 +1,6 @@
 html, body, #root {
   margin: 0 !important;
   padding: 0 !important;
-  width: 100vw !important;
-  height: 100vh !important;
   background: #f9fafb !important;
   font-family: 'Poppins', sans-serif !important;
   display: flex !important;
@@ -13,18 +11,8 @@ html, body, #root {
 }
 
 .translator-container {
-  width: 100% !important;
-  max-width: 800px !important;
-  padding: 3rem !important;
-  background: white !important;
-  border-radius: 20px !important;
-  box-shadow: 0 0 0 9999px #f9fafb !important; /* force center illusion */
-  text-align: center !important;
-  box-sizing: border-box !important;
-  margin: auto !important;
-  transform: translateZ(0) !important;
-  position: relative !important;
-  z-index: 9999 !important;
+  padding: 2rem;
+  text-align: center;
 }
 .input-box,
 .api-key-input,
