@@ -1,11 +1,12 @@
-body {
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  width: 100%;
   font-family: 'Poppins', sans-serif;
   background: #f9fafb;
-  margin: 0;
-  padding: 3rem 0;
-  display: flex;
-  justify-content: center;
-  min-height: 100vh;
+  display: grid;
+  place-items: center;
   box-sizing: border-box;
 }
 
@@ -14,9 +15,11 @@ body {
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   padding: 3rem;
+  margin: 3rem 0;
   max-width: 1000px;
   width: 95%;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .input-box,
