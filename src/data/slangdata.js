@@ -3257,3 +3257,5 @@ const slangdata = [
     }
   
 ];
+
+export default slangdata;
