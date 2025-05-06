@@ -1,27 +1,31 @@
 html, body, #root {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background: #f9fafb;
-  font-family: 'Poppins', sans-serif;
-  display: grid;
-  place-items: center;
-  min-height: 100vh;
-  overflow-x: hidden;
-  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: #f9fafb !important;
+  font-family: 'Poppins', sans-serif !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-sizing: border-box !important;
+  overflow: hidden !important;
 }
 
 .translator-container {
-  width: 100%;
-  max-width: 1000px;
-  padding: 3rem;
-  background: white;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-  text-align: center;
-  box-sizing: border-box;
+  width: 100% !important;
+  max-width: 800px !important;
+  padding: 3rem !important;
+  background: white !important;
+  border-radius: 20px !important;
+  box-shadow: 0 0 0 9999px #f9fafb !important; /* force center illusion */
+  text-align: center !important;
+  box-sizing: border-box !important;
+  margin: auto !important;
+  transform: translateZ(0) !important;
+  position: relative !important;
+  z-index: 9999 !important;
 }
-
 .input-box,
 .api-key-input,
 .translate-btn {
