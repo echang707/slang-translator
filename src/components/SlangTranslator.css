@@ -1,0 +1,57 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f9fafb;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .translator-container {
+    max-width: 600px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    text-align: center;
+  }
+  
+  .input-box,
+  .api-key-input,
+  .translate-btn {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+  }
+  
+  .translate-btn {
+    background: #4f46e5;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .translate-btn:hover {
+    background: #4338ca;
+  }
+  
+  .output-card {
+    text-align: left;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #f3f4f6;
+    border-radius: 12px;
+  }
+  
+  .slang-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .slang-list li {
+    margin: 6px 0;
+  }
+  
