@@ -1,24 +1,21 @@
-/* Full-page center */
-body, html, #root {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+body {
   font-family: 'Poppins', sans-serif;
   background: #f9fafb;
+  margin: 0;
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
 }
 
-/* Slang card styling */
 .translator-container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 4rem auto;
-  padding: 2.5rem;
-  background: #fff;
+  background: white;
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  padding: 3rem;
+  max-width: 1000px;
+  width: 95%;
   text-align: center;
 }
 
