@@ -55,12 +55,12 @@ html, body, #root {
   padding: 1.5rem;
   background: #f3f4f6;
   border-radius: 12px;
-  overflow-wrap: break-word;
   word-break: break-word;
-  white-space: pre-wrap; /* Ensures line breaks + wrapping */
-  max-width: 100%;
-  overflow-x: auto;
+  white-space: pre-wrap; /* preserve line breaks, allow wrapping */
   box-sizing: border-box;
+  width: 100%;
+  overflow-x: unset; /* <-- remove horizontal scroll */
+  overflow-y: unset;
 }
 
 .slang-list {
