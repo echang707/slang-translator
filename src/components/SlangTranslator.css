@@ -49,6 +49,16 @@ html, body, #root {
   background: #4338ca;
 }
 
+.result-text {
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+
 .output-card {
   text-align: left;
   margin-top: 2rem;

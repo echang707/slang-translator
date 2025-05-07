@@ -69,7 +69,7 @@ Translate to standard English while keeping tone. Provide a breakdown.
       {result && (
         <div className="output-card">
           <h2>🧼 Clean Translation</h2>
-          <pre>{result}</pre>
+          <div className="result-text">{result}</div>
 
           {slangUsed.length > 0 && (
             <>
