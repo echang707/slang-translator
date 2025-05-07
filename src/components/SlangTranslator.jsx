@@ -13,9 +13,12 @@ export default function SlangTranslator() {
 
   const translate = async () => {
     const lowerInput = input.toLowerCase();
-    const foundSlang = slangdata.filter(entry =>
-      lowerInput.includes(entry.slang_term.toLowerCase())
-    );
+    const foundSlang = slangData.filter(entry => {
+      const slang = entry.slang_term.toLowerCase().trim();
+      const pattern = new RegExp(`\\b${slang}\\b`, 'i');
+      return pattern.test(lowerInput);
+    });
+    
     setSlangUsed(foundSlang);
 
     const userPrompt = `
