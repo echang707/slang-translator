@@ -26,6 +26,7 @@ html, body, #root {
 .translator-container h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: #111; /* ✅ Force visible text color */
 }
 
 .input-box,
