@@ -2832,6 +2832,14 @@ const slangdata = [
       "aliases": ""
     },
     {
+        "slang_term": "Italian brain rot",
+        "translation": "Absurd TikTok humor with fake Italian names and AI-generated characters.",
+        "meaning": "A meme trend where surreal AI-generated creatures are given fake Italian-sounding names and narrated with silly, exaggerated voices. It’s chaotic, comedic, and intentionally nonsensical.",
+        "example": "That video of Tralalero Tralala in Nike sneakers is peak Italian brain rot.",
+        "parent_response": "They’re talking about a goofy TikTok trend full of weird AI characters and made-up Italian names. It’s a form of absurd internet humor.",
+        "aliases": "ballerina cappuccina, lirili larila, tralalero tralala, trippi troppi, tung tung tung sahur"
+      },
+    {
       "slang_term": "Stoop",
       "translation": "Meaning of 'Stoop' in simple terms.",
       "meaning": "'Stoop' is a slang expression used to convey something specific in informal speech. It often relates to behavior, identity, or reactions in casual settings.",
