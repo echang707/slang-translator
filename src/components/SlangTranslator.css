@@ -6,7 +6,6 @@ html, body, #root {
   background: #f9fafb;
   font-family: 'Poppins', sans-serif;
   display: flex;
-  align-items: center;
   justify-content: center;
   box-sizing: border-box;
   overflow-x: hidden;
@@ -15,15 +14,18 @@ html, body, #root {
 .translator-container {
   width: 100%;
   max-width: 800px;
-  padding: 3rem;
+  padding: 2.5rem;
+  margin: 2rem 1rem;
   background: white;
   border-radius: 20px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
   text-align: center;
   box-sizing: border-box;
-  margin: 2rem;
-  position: relative;
-  z-index: 1;
+}
+
+.translator-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .input-box,
@@ -36,6 +38,14 @@ html, body, #root {
   border-radius: 10px;
   font-size: 1rem;
   box-sizing: border-box;
+  background: white;
+  color: #111;
+}
+
+.input-box:focus,
+.api-key-input:focus {
+  border-color: #4f46e5;
+  outline: none;
 }
 
 .translate-btn {
@@ -43,64 +53,65 @@ html, body, #root {
   color: white;
   font-weight: bold;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .translate-btn:hover {
   background: #4338ca;
 }
 
-.result-text {
-  white-space: pre-wrap;
-  word-break: break-word;
-  overflow-wrap: break-word;
-  font-family: inherit;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
 .output-card {
   text-align: left;
   margin-top: 2rem;
   padding: 1.5rem;
-  background: #f3f4f6;
+  background: #eef1f5;
   border-radius: 12px;
+  box-sizing: border-box;
   word-break: break-word;
   white-space: pre-wrap;
-  box-sizing: border-box;
   width: 100%;
-  overflow: visible;
+}
+
+.result-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #111;
 }
 
 .slang-list {
   list-style: none;
   padding-left: 0;
+  margin-top: 1rem;
 }
 
 .slang-list li {
   margin: 6px 0;
 }
 
-/* ✅ Mobile-First Responsive Fixes */
-@media (max-width: 768px) {
+/* 🔧 Mobile Fixes */
+@media (max-width: 600px) {
   .translator-container {
     padding: 1.5rem;
     margin: 1rem;
   }
 
+  .translator-container h1 {
+    font-size: 1.6rem;
+  }
+
   .input-box,
   .api-key-input,
   .translate-btn {
-    font-size: 0.95rem;
+    font-size: 1rem;
     padding: 10px;
-  }
-
-  .result-text {
-    font-size: 0.95rem;
-    line-height: 1.5;
   }
 
   .output-card {
     padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .result-text {
+    font-size: 0.95rem;
   }
 }
