@@ -2834,11 +2834,12 @@ const slangdata = [
     {
         "slang_term": "Italian brain rot",
         "translation": "Absurd TikTok humor with fake Italian names and AI-generated characters.",
-        "meaning": "A meme trend where surreal AI-generated creatures are given fake Italian-sounding names and narrated with silly, exaggerated voices. It’s chaotic, comedic, and intentionally nonsensical.",
-        "example": "That video of Tralalero Tralala in Nike sneakers is peak Italian brain rot.",
-        "parent_response": "They’re talking about a goofy TikTok trend full of weird AI characters and made-up Italian names. It’s a form of absurd internet humor.",
-        "aliases": "ballerina cappuccina, lirili larila, tralalero tralala, trippi troppi, tung tung tung sahur"
-      },
+        "meaning": "A TikTok trend with surreal, often AI-generated characters given chaotic fake Italian-sounding names and paired with exaggerated voices. It’s weird, random, and intentionally ridiculous.",
+        "example": "I’ve been watching Trippi Troppi and Frigo Camelo all day—pure Italian brain rot.",
+        "parent_response": "They're referencing a viral meme with silly, made-up characters and gibberish names. It’s just Gen Z humor, mostly harmless and absurd.",
+        "aliases": "tralalero tralala, bombardiro crocodilo, tung tung tung tung tung tung tung tung tung sahur, lirilì larilà, boneca ambalabu, brr brr patapim, chimpanzini bananini, bombombini gusini, capuccino assassino, trippi troppi, frigo camelo, la vaca saturno saturnita, ballerina cappucina, u din din din din dun ma din din din dun, trulimero trulicina, girafa celestre, bobrito bandito, frulli frulla, ta ta ta ta ta ta ta ta ta ta ta sahur, brri brri bicus dicus bombicus, tric trac baraboom, cocofanto elefanto, burbaloni lulilolli, orangutini ananasini, garamaraman dan madudungdung tak tuntung perkuntung, il cacto hipopotamo, blueberrinni octopussini, glorbo fruttodrillo, rhino toasterino, zibra zubra zibralini, graipussi medussi, tigrrullini watermellini, tracotucotulu delapeladustuz, chimpanzini capuchini, gorillo watermellondrillo, bananita dolfinita, tigroligre frutonni, trippa troppa tralala lirilì rilà tung tung sahur boneca tung tung tralalelo trippi troppa crocodina, tung tung tung tung tung tung tung tung tung assassino boneca, giraffa meloniera, pot hotspot, rhinodino dildorino, svinino bombondino, bulbito bandito traktorito, raccooni watermelunni, matteooooooooooooo"
+      }
+      ,
     {
       "slang_term": "Stoop",
       "translation": "Meaning of 'Stoop' in simple terms.",

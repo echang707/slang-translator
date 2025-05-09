@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import slangdata from "../data/slangdata";
 import "./SlangTranslator.css";
+import Fuse from "fuse.js";
 
 // ✅ Load from .env
 const apiKey = import.meta.env.VITE_OPENAI_API_KEY;
@@ -12,19 +13,14 @@ export default function SlangTranslator() {
   const [slangUsed, setSlangUsed] = useState([]);
 
   const translate = async () => {
-    const lowerInput = input.toLowerCase();
-    const foundSlang = slangdata.filter(entry => {
-      const terms = [
-        entry.slang_term.toLowerCase().trim(),
-        ...(entry.aliases ? entry.aliases.toLowerCase().split(",").map(a => a.trim()) : [])
-      ];
-    
-      return terms.some(term => {
-        const pattern = new RegExp(`\\b${term}\\b`, 'i');
-        return pattern.test(lowerInput);
-      });
+    const fuse = new Fuse(slangdata, {
+      includeScore: true,
+      threshold: 0.4, // Adjust this for stricter/looser matching
+      keys: ["slang_term", "aliases"]
     });
-    
+
+    const results = fuse.search(input.toLowerCase());
+    const foundSlang = results.map(r => r.item);
     setSlangUsed(foundSlang);
 
     const userPrompt = `
