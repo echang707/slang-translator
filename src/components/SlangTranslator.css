@@ -1,27 +1,29 @@
+* {
+  box-sizing: border-box;
+}
+
 html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: auto; /* ✅ Don't force full viewport height */
+  height: auto; /* Don't force fullscreen height */
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #f9fafb, #eceff1);
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
-
 .translator-container {
   width: 100%;
   max-width: 800px;
-  margin: 2rem auto; /* ✅ centers horizontally, space on top/bottom */
-  padding: 2.5rem;
-  background: rgba(255, 255, 255, 0.75);
+  margin: 0 auto;         /* Center horizontally only */
+  padding: 2rem 1.25rem;  /* Add top/bottom space inside, not outside */
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
   text-align: center;
-  box-sizing: border-box;
 }
 .translator-container:hover {
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
@@ -108,29 +110,26 @@ html, body, #root {
   left: 0;
 }
 
-/* 📱 Mobile Styling */
 @media (max-width: 600px) {
   .translator-container {
-    padding: 1.5rem;
-    margin: 1rem 1rem 1.5rem 1rem; /* Reduce bottom margin */
+    padding: 1rem;
+    margin: 1rem;
   }
 
   .translator-container h1 {
-    font-size: 1.5rem;
-    margin-bottom: 0.75rem;
+    font-size: 1.4rem;
   }
 
   .input-box,
   .api-key-input,
   .translate-btn {
-    font-size: 0.95rem;
-    padding: 10px;
+    font-size: 1rem;
   }
 
   .output-card {
-    padding: 1rem;
     font-size: 0.95rem;
   }
+}
 
   .result-text {
     font-size: 0.95rem;
