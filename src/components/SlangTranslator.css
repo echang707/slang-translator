@@ -113,12 +113,22 @@ html, body, #root {
 /* 🔧 Mobile Fixes */
 @media (max-width: 600px) {
   .translator-container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 1.5rem;
-    margin: 1rem;
+    margin: 1rem auto; /* center horizontally */
+    overflow-x: hidden;
+  }
+
+  .translator-container * {
+    box-sizing: border-box;
+    max-width: 100%;
   }
 
   .translator-container h1 {
     font-size: 1.6rem;
+    word-wrap: break-word;
   }
 
   .input-box,
@@ -126,11 +136,13 @@ html, body, #root {
   .translate-btn {
     font-size: 1rem;
     padding: 10px;
+    width: 100%;
   }
 
   .output-card {
     padding: 1rem;
     font-size: 0.95rem;
+    overflow-wrap: break-word;
   }
 
   .result-text {
