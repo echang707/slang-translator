@@ -1,30 +1,33 @@
-* {
-  box-sizing: border-box;
-}
-
 html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: auto; /* Don't force fullscreen height */
+  min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #f9fafb, #eceff1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
+
 .translator-container {
   width: 100%;
   max-width: 800px;
-  margin: 0 auto;         /* Center horizontally only */
-  padding: 2rem 1.25rem;  /* Add top/bottom space inside, not outside */
-  background: rgba(255, 255, 255, 0.85);
+  padding: 2.5rem;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   text-align: center;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
 }
+
 .translator-container:hover {
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
 }
@@ -110,39 +113,28 @@ html, body, #root {
   left: 0;
 }
 
-/* 🔧 Mobile Fixes */
+/* 📱 Mobile Styling */
 @media (max-width: 600px) {
   .translator-container {
-    width: 100%;
-    max-width: 100%;
-    box-sizing: border-box;
     padding: 1.5rem;
-    margin: 1rem auto; /* center horizontally */
-    overflow-x: hidden;
-  }
-
-  .translator-container * {
-    box-sizing: border-box;
-    max-width: 100%;
+    margin: 1rem 1rem 1.5rem 1rem; /* Reduce bottom margin */
   }
 
   .translator-container h1 {
-    font-size: 1.6rem;
-    word-wrap: break-word;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
   }
 
   .input-box,
   .api-key-input,
   .translate-btn {
-    font-size: 1rem;
+    font-size: 0.95rem;
     padding: 10px;
-    width: 100%;
   }
 
   .output-card {
     padding: 1rem;
     font-size: 0.95rem;
-    overflow-wrap: break-word;
   }
 
   .result-text {
