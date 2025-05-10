@@ -5,9 +5,7 @@ html, body, #root {
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #f9fafb, #eceff1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
   box-sizing: border-box;
   overflow-x: hidden;
 }
