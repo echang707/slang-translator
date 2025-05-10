@@ -2,12 +2,9 @@ html, body, #root {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100vh;
+  height: auto; /* ✅ Don't force full viewport height */
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #f9fafb, #eceff1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-sizing: border-box;
   overflow-x: hidden;
 }
@@ -16,8 +13,8 @@ html, body, #root {
 .translator-container {
   width: 100%;
   max-width: 800px;
+  margin: 2rem auto; /* ✅ centers horizontally, space on top/bottom */
   padding: 2.5rem;
-  margin: auto;
   background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -25,9 +22,7 @@ html, body, #root {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
   text-align: center;
   box-sizing: border-box;
-  transition: box-shadow 0.3s ease;
 }
-
 .translator-container:hover {
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.1);
 }
