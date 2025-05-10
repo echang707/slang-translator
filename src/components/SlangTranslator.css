@@ -6,19 +6,19 @@ html, body, #root {
   font-family: 'Poppins', sans-serif;
   background: linear-gradient(135deg, #f9fafb, #eceff1);
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   box-sizing: border-box;
   overflow-x: hidden;
 }
 
-/* ✨ Soft-glass container look */
+
 .translator-container {
   width: 100%;
   max-width: 800px;
   padding: 2.5rem;
-  margin: 2rem 1rem;
-  background: rgba(255, 255, 255, 0.75); /* Semi-transparent */
+  margin: auto;
+  background: rgba(255, 255, 255, 0.75);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -35,6 +35,7 @@ html, body, #root {
 .translator-container h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  margin-top: 0;
   color: #111;
   font-weight: 600;
 }
@@ -78,14 +79,13 @@ html, body, #root {
   text-align: left;
   margin-top: 2rem;
   padding: 1.5rem;
-  background: rgba(239, 241, 245, 0.8);
+  background: rgba(239, 241, 245, 0.9);
   border-radius: 12px;
   box-sizing: border-box;
   word-break: break-word;
   white-space: pre-wrap;
   width: 100%;
   color: #111;
-  transition: background 0.3s ease;
 }
 
 .result-text {
@@ -117,17 +117,18 @@ html, body, #root {
 @media (max-width: 600px) {
   .translator-container {
     padding: 1.5rem;
-    margin: 1rem;
+    margin: 1rem 1rem 1.5rem 1rem; /* Reduce bottom margin */
   }
 
   .translator-container h1 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
   }
 
   .input-box,
   .api-key-input,
   .translate-btn {
-    font-size: 1rem;
+    font-size: 0.95rem;
     padding: 10px;
   }
 
