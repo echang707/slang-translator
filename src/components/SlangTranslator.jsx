@@ -20,7 +20,7 @@ export default function SlangTranslator() {
     
     const fuse = new Fuse(cleanedData, {
       includeScore: true,
-      threshold: 0.4,
+      threshold: 0.1,
       keys: ["all_aliases"]
     });
 
