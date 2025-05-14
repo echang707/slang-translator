@@ -493,7 +493,7 @@ const slangdata = [
       "meaning": "Used to refer to juicy information or news.",
       "example": "Spill the tea—what happened after I left?",
       "parent_response": "They’re asking for gossip.",
-      "aliases": "T"
+      "aliases": ""
     },
     {
       "slang_term": "thirsty",
