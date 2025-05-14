@@ -2830,6 +2830,13 @@ const slangdata = [
       "example": "I can't believe he said that—total Stoked.",
       "parent_response": "They’re using the slang term 'Stoked' to express a common idea among peers.",
       "aliases": ""
+    },{
+        "slang_term": "ate",
+        "aliases": "she ate, he ate, they ate",
+        "translation": "To do something really well; to perform impressively.",
+        "meaning": "'Ate' is a slang expression used to describe someone doing exceptionally well, often in performance, fashion, or expression.",
+        "example": "She ate that performance up — total domination.",
+        "parent_response": "They're saying she did something really well, like a great performance."
     },
     {
         "slang_term": "Italian brain rot",

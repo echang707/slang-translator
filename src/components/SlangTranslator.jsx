@@ -13,10 +13,15 @@ export default function SlangTranslator() {
   const [slangUsed, setSlangUsed] = useState([]);
 
   const translate = async () => {
-    const fuse = new Fuse(slangdata, {
+    const cleanedData = slangdata.map(item => ({
+      ...item,
+      all_aliases: [item.slang_term, ...(item.aliases ? item.aliases.split(",").map(a => a.trim()) : [])]
+    }));
+    
+    const fuse = new Fuse(cleanedData, {
       includeScore: true,
-      threshold: 0.4, // Adjust this for stricter/looser matching
-      keys: ["slang_term", "aliases"]
+      threshold: 0.4,
+      keys: ["all_aliases"]
     });
 
     const results = fuse.search(input.toLowerCase());
@@ -24,10 +29,20 @@ export default function SlangTranslator() {
     setSlangUsed(foundSlang);
 
     const userPrompt = `
-Sentence: "${input}"
-Known slang terms: ${foundSlang.map(e => e.slang_term).join(", ")}
-Translate to standard English while keeping tone. Provide a breakdown.
-`;
+    You are a slang translator. Use only the slang terms and definitions provided below to interpret the sentence.
+
+    Sentence: "${input}"
+
+    Slang Terms Found:
+    ${foundSlang.map(e => `- ${e.slang_term}: ${e.translation || e.meaning}`).join("\n")}
+
+    Now translate the sentence into plain English (preserving tone), and then explain each slang term.
+
+    Format like:
+    Translation: "..."
+    Breakdown:
+    - "term": explanation
+    `;
 
     try {
       const res = await axios.post("https://api.openai.com/v1/chat/completions", {
